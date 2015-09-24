@@ -2,10 +2,10 @@ package input.controller;
 
 public class InputRunner
 {
-	public static void main (String [] args)
+	public static void main(String[] args)
 	{
 		InputController myInputController = new InputController();
-		myInput.start();
+		myInputController.start();
 	}
 
 }
