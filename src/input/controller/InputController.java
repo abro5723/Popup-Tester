@@ -20,7 +20,11 @@ public class InputController
 
 		String temp = myPopups.grabAnswer("Type in your age");
 		int myAge;
-
+		
+		while(!isInteger(temp))
+		{
+			temp = myPopups.grabAnswer("Type in a positive integer idiot!");
+		}
 		if (isInteger(temp))
 		{
 			myAge = Integer.parseInt(temp);

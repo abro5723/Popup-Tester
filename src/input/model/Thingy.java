@@ -1,5 +1,11 @@
 package input.model;
 
+/**
+ * Creates the object "Thingy" for variable use
+ * @author abro5723
+ *
+ */
+
 public class Thingy
 {
 	private String name;
@@ -15,6 +21,7 @@ public class Thingy
 
 	public Thingy(String name, int age, double weight)
 	{
+		//this. refers to the current instance of an object
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
