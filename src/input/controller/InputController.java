@@ -58,7 +58,7 @@ public class InputController
 		}
 		catch (NumberFormatException error)
 		{
-			myPopups.showResponse("not an iteger - bad value will be used");
+			myPopups.showResponse("not an integer - bad value will be used");
 		}
 
 		return isInt;
@@ -81,3 +81,8 @@ public class InputController
 		return isDouble;
 	}
 }
+
+
+
+
+
