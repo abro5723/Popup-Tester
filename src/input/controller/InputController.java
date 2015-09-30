@@ -38,6 +38,10 @@ public class InputController
 		String tempWeight = myPopups.grabAnswer("Type in your weight");
 		double myWeight;
 		
+		while(!isDouble(tempWeight))
+		{
+			tempWeight = myPopups.grabAnswer("Type in a number you butthead!");
+		}
 		if(isDouble(tempWeight))
 		{
 			myWeight = Double.parseDouble(tempWeight);
@@ -62,7 +66,7 @@ public class InputController
 		}
 		catch (NumberFormatException error)
 		{
-			myPopups.showResponse("not an integer - bad value will be used");
+			myPopups.showResponse("not an integer, retry!");
 		}
 
 		return isInt;
@@ -79,7 +83,7 @@ public class InputController
 		}
 		catch(NumberFormatException error)
 		{
-			myPopups.showResponse("not a double - bad value will be used");
+			myPopups.showResponse("not a number! Retry!");
 		}
 		
 		return isDouble;
